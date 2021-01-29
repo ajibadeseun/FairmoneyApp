@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="16dp"
+    android:paddingLeft="16dp"
+    android:paddingTop="12dp"
+    android:paddingEnd="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="12dp"
+    tools:context=".UserDetailsActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/profile_pics"
+        android:transitionName="profileImg"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_placeholder" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="3dp"
+
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:textColor="@color/grey"
+                android:textSize="14sp"
+                android:id="@+id/n"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_toEndOf="@+id/n"
+                android:layout_toRightOf="@+id/n"
+                android:gravity="end"
+                android:id="@+id/name_text"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:text="Seun Ajibade" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="3dp"
+
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone"
+                android:textColor="@color/grey"
+                android:textSize="14sp"
+                android:id="@+id/p"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_toEndOf="@+id/p"
+                android:layout_toRightOf="@+id/p"
+                android:gravity="end"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/phone_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:text="0900000" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="3dp"
+
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="12dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/location"
+                android:textSize="14sp"
+                android:id="@+id/l"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/grey"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/location_text"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_toEndOf="@+id/l"
+                android:layout_toRightOf="@+id/l"
+                android:gravity="end"
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                tools:text="Ajah, Lagos State"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="3dp"
+
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="12dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/date_joined"
+                android:textSize="14sp"
+                android:id="@+id/dj"
+                android:textColor="@color/grey"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/date_joined_text"
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                tools:text="12/12/20"
+                android:layout_toEndOf="@+id/dj"
+                android:layout_toRightOf="@+id/dj"
+                android:gravity="end"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="3dp"
+
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="12dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/date_of_birth"
+                android:textSize="14sp"
+                android:textColor="@color/grey"
+                android:textStyle="bold"
+                android:id="@+id/db"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/dob_text"
+                android:layout_toEndOf="@+id/db"
+                android:layout_toRightOf="@+id/db"
+                android:gravity="end"
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                tools:text="12/12/20"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

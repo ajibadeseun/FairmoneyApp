@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Fairmoney App</string>
+    <string name="loading">Loading...</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="location">Location</string>
+    <string name="date_joined">Date Joined</string>
+    <string name="date_of_birth">Date of Birth</string>
+</resources>
